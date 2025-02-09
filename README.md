@@ -32,7 +32,7 @@ Enter the key: monarchy
 Decrypted message: instrumentsx
 ```
 
-## 🛠 How to Run the Code
+## How to Run the Code
 ### Option 1: Open in Google Colab
 To directly open the notebook in Google Colab, click the button below:
 
@@ -125,9 +125,9 @@ print("Decrypted message:",decrypt(text,key))
 - Prints the resulting encrypted and decrypted messages.
 
 ##  Features
-✅ Implements Playfair Cipher for secure encryption
-✅ Encryption and decryption functions
-✅ Works on Google Colab & locally
-✅ Easy to clone and run
+1) Implements Playfair Cipher for secure encryption
+2)Encryption and decryption functions
+3) Works on Google Colab & locally
+4) Easy to clone and run
 
 
