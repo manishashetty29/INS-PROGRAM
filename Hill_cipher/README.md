@@ -37,15 +37,15 @@ Option 2: Clone the Repository and Run Locally
 
 Clone the repository using Git:
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
+git clone https://github.com/manishashetty29/INS-PROGRAM.git
 
 Navigate to the project directory:
 
-cd YOUR_REPOSITORY_NAME
+cd Hill_cipher
 
 Run the script in Python:
 
-python hill_cipher.py
+python hill_cipher.ipynb
 
 ## Code Explanation
 
