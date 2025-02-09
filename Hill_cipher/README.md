@@ -8,7 +8,7 @@ The Hill Cipher is a polygraphic substitution cipher that uses matrix multiplica
 
 🔹 Logic of the Code
 
-# Encryption:
+## Encryption:
 
 The hill_cipher_encrpt() function takes plaintext and a key matrix as input.
 
