@@ -1,7 +1,5 @@
 ## Hill Cipher 
 
-## Description
-
 This repository contains a simple Python program that implements the Hill Cipher encryption algorithm using NumPy. The code is designed to be executed in Google Colab and can also be cloned from GitHub for local execution.
 
 🔹 About the Code
