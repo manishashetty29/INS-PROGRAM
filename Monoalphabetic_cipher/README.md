@@ -27,7 +27,7 @@ To directly open the notebook in Google Colab, click the button below:
 ### Option 2: Clone the Repository and Run Locally
 1. **Clone the repository** using Git:
    ```sh
-   git clone https://github.com/manishashetty29/-Monoalphabetic-cipher.git
+   git clone https://github.com/manishashetty29/INS-PROGRAM.git
    ```
 2. **Navigate to the project directory**:
    ```sh
