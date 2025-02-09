@@ -4,10 +4,10 @@
 
 This repository contains a Python program that implements the **Playfair Cipher** to encrypt and decrypt text. The code is designed to be executed in **Google Colab** and can be cloned from GitHub for local execution.
 
-## 🔍 About the Code
+##  About the Code
 The **Playfair Cipher** is a digraph substitution cipher that encrypts text based on a 5x5 matrix of letters generated using a key. Each pair of letters in the plaintext is transformed based on their positions in the matrix.
 
-### 🔑 Logic of the Code
+###  Logic of the Code
 - **Matrix Creation**:
   - A 5x5 matrix is generated using the key, eliminating duplicate letters and merging 'J' with 'I'.
   - The remaining letters of the alphabet are appended to complete the matrix.
@@ -21,7 +21,7 @@ The **Playfair Cipher** is a digraph substitution cipher that encrypts text base
 - **Decryption**:
   - The reverse process of encryption is applied using the same matrix.
 
-### 🔄 Example Execution
+###  Example Execution
 ```
 Enter the plain text: instruments
 Enter the key: monarchy
@@ -52,7 +52,7 @@ To directly open the notebook in Google Colab, click the button below:
    python Untitled0.ipynb
    ```
 
-## 📜 Code Explanation
+##  Code Explanation
 ```python
 def create_matrix(key):
     alphabet="ABCDEFGHIKLMNOPQRSTUVWXYZ"
@@ -124,7 +124,7 @@ print("Decrypted message:",decrypt(text,key))
 - Takes user input for encryption and decryption.
 - Prints the resulting encrypted and decrypted messages.
 
-## 📌 Features
+##  Features
 ✅ Implements Playfair Cipher for secure encryption
 ✅ Encryption and decryption functions
 ✅ Works on Google Colab & locally
