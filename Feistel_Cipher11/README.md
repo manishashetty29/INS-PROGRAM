@@ -58,7 +58,7 @@ If you prefer running the code on your local machine, follow these steps:
 2. Open a terminal or command prompt in the cloned repository directory.
 3. Run the script using Python:
    ```sh
-   python feistel_cipher.py
+   python feistel_cipher11.ipynb
    ```
 4. Enter the required input (plaintext and key) when prompted.
 
