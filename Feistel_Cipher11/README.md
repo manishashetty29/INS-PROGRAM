@@ -1,5 +1,4 @@
-# Feistel Cipher Implementation in Python
-
+# Feistel Cipher 
 ## Overview
 This repository contains an implementation of a simple Feistel cipher in Python. The program takes an input string and a key, converts them into binary, applies the Feistel encryption rounds, and then decrypts the ciphertext back to the original text. The code has been executed in Google Colab and is available on GitHub for easy access.
 
