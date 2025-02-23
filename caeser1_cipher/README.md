@@ -29,7 +29,7 @@ Plain text: hello
 ### Option 1: Open in Google Colab
 To directly open the notebook in Google Colab, click the button below:
 
-###  https://colab.research.google.com/github/manishashetty29/Caeser-cipher/blob/main/caeser_cipher.ipynb
+###  https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/caeser1_cipher/caeser_cipher.ipynb
 
 ### Option 2: Clone the Repository and Run Locally
 1. **Clone the repository** using Git:
