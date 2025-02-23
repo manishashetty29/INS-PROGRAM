@@ -44,13 +44,13 @@ The implementation follows these steps:
 ## How to Clone the Repository
 To use this implementation, clone the repository using the following command:
 ```sh
-git clone <repository_url>
+git clone https://github.com/manishashetty29/INS-PROGRAM.git
 ```
 Replace `<repository_url>` with the actual URL of your GitHub repository.
 
 ## Running the Code
 ### Option 1: Google Colab
-You can run the code directly in Google Colab by clicking the **"Open in Colab"** button available in the repository.
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Feistel_Cipher11/Feistel_Cipher11.ipynb
 
 ### Option 2: Run Locally
 If you prefer running the code on your local machine, follow these steps:
