@@ -65,7 +65,7 @@ cd hill-cipher
 ### Run the Code in Google Colab
 You can directly open and execute the code in Google Colab by clicking the button below:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/hill-cipher/blob/main/hill_cipher.ipynb)
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Hill_cipher/Hill_cipher.ipynb
 
 ### Running in Colab:
 1. Click the "Open in Colab" button above.
