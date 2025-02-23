@@ -29,7 +29,7 @@ Encrypted Text: ZEBBW
 Option 1: Open in Google Colab
 
 To directly open the notebook in Google Colab, click the button below:
-https://colab.research.google.com/drive/1lfhGmPvgX7TF71lYjjC0NSY4vKEmiI7O?authuser=1#scrollTo=9R1vQGPF83P6
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Hill_cipher/hill_cipher.ipynb
 
 
 
