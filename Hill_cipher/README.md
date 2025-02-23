@@ -58,8 +58,8 @@ Key Matrix:
 ### Clone the Repository
 To get the code on your local machine, use the following command:
 ```sh
-git clone https://github.com/yourusername/hill-cipher.git
-cd hill-cipher
+git clone https://github.com/manishashetty29/INS-PROGRAM.git
+cd INS-PROGRAM
 ```
 
 ### Run the Code in Google Colab
