@@ -2,11 +2,11 @@
 
 This repository contains a simple Python program that implements the Hill Cipher encryption algorithm using NumPy. The code is designed to be executed in Google Colab and can also be cloned from GitHub for local execution.
 
-🔹 About the Code
+ About the Code
 
 The Hill Cipher is a polygraphic substitution cipher that uses matrix multiplication for encryption. This program takes a plaintext input and encrypts it using a predefined key matrix.
 
-🔹 Logic of the Code
+ Logic of the Code
 
 ## Encryption:
 
@@ -20,7 +20,7 @@ The numerical values are grouped into blocks, multiplied with the key matrix, an
 
 The transformed numerical values are converted back into letters to produce the encrypted text.
 
-🔹 Example Execution
+ Example Execution
 
 Enter the plaintext: HELLO
 Encrypted Text: ZEBBW
