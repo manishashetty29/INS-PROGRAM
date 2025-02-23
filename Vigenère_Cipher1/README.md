@@ -37,7 +37,7 @@ The code consists of two primary functions:
 ### Option 1: Run in Google Colab
 To run this code in **Google Colab**, click the following link:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK_HERE)
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Vigen%C3%A8re_Cipher1/Vigen%C3%A8re_Cipher1.ipynb
 
 This will open the notebook in Colab, where you can execute the code without any local setup.
 
@@ -46,14 +46,14 @@ If you want to run the code locally, follow these steps:
 
 #### Step 1: Clone the repository
 ```bash
-  git clone YOUR_GITHUB_REPOSITORY_LINK_HERE
-  cd YOUR_REPOSITORY_NAME
+  git clone https://github.com/manishashetty29/INS-PROGRAM.git
+  cd INS-PROGRAM
 ```
 
 #### Step 2: Run the script
 Execute the Python script using:
 ```bash
-  python vigenere_cipher.py
+  python vigenere_Cipher1.ipynb
 ```
 
 You will be prompted to enter the plaintext and the key.
