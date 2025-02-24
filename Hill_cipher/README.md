@@ -1,86 +1,71 @@
 # Hill Cipher 
+Encryption and Decryption
 
-## Overview
-This repository contains a Python implementation of the Hill Cipher encryption and decryption technique using a 2x2 key matrix. The Hill Cipher is a polygraphic substitution cipher based on linear algebra, where plaintext is encrypted using matrix multiplication over modular arithmetic.
+This repository contains a Python implementation of the **Hill Cipher** encryption and decryption algorithm using NumPy. The program encrypts a plaintext message using a **3x3 key matrix** and then decrypts it back to the original text.
 
-This implementation includes:
-- **Encryption function** (`hill_cipher_encrypt`) that converts plaintext into ciphertext using matrix multiplication.
-- **Decryption function** (`hill_cipher_decrypt`) that retrieves plaintext by computing the modular inverse of the key matrix.
-- **Modular inverse function** (`mod_inverse_matrix`) that calculates the modular inverse of a matrix under modulo 26.
+## How the Code Works
 
-## Code Explanation
+### Encryption Process:
+1. Convert the plaintext to uppercase and remove spaces.
+2. Ensure the plaintext length is a multiple of the key matrix size by padding with 'X' if necessary.
+3. Convert the characters to numerical values (A=0, B=1, ..., Z=25).
+4. Break the plaintext into blocks of size `n` (size of the key matrix).
+5. Multiply each block with the key matrix and take modulo 26.
+6. Convert the resulting numbers back to characters to get the ciphertext.
 
-### 1. Modular Inverse of the Key Matrix
-Before decryption, we need the inverse of the key matrix under modulo 26. This is done using the function:
-```python
-mod_inverse_matrix(matrix, modulus)
+### Decryption Process:
+1. Compute the determinant of the key matrix.
+2. Find the modular inverse of the determinant (mod 26).
+3. Compute the inverse of the key matrix in modulo 26.
+4. Convert the ciphertext into numerical values.
+5. Multiply each block with the inverse key matrix and take modulo 26.
+6. Convert the resulting numbers back to characters.
+7. Remove any padding 'X' added during encryption.
+
+## Installation and Execution
+
+### Cloning the Repository
+To get the code, clone this repository using the following command:
+```sh
+ git clone https://github.com/manishashetty29/INS-PROGRAM.git
 ```
-Steps:
-- Compute the determinant of the key matrix.
-- Find the modular inverse of the determinant under modulo 26.
-- Compute the adjugate matrix.
-- Multiply the adjugate matrix by the modular inverse of the determinant, then take modulo 26.
 
-### 2. Encryption Function
-```python
-hill_cipher_encrypt(plaintext, key_matrix)
-```
-Steps:
-- Convert plaintext to uppercase and remove spaces.
-- Convert characters into numerical values (A=0, B=1, ..., Z=25).
-- Break plaintext into blocks of size 2 (matching the key matrix size).
-- Multiply the plaintext vector by the key matrix and apply modulo 26.
-- Convert the numerical values back into characters to form the ciphertext.
+### Running the Code in Google Colab
+1. Open the repository on GitHub.
+2. Click on the **"Open in Colab"** button to directly open the script in Google Colab.
+3. Run the script by clicking on **Runtime > Run all** or executing each cell individually.
+4. Enter the plaintext when prompted.
+5. The script will display the encrypted and decrypted text.
 
-### 3. Decryption Function
-```python
-hill_cipher_decrypt(ciphertext, key_matrix)
-```
-Steps:
-- Compute the modular inverse of the key matrix.
-- Convert ciphertext characters into numerical values.
-- Break ciphertext into blocks of size 2.
-- Multiply each block by the inverse key matrix and apply modulo 26.
-- Convert the numerical values back into characters to retrieve plaintext.
-
-## Example Usage
-### Given:
-Plaintext: `HELP`  
-Key Matrix:
-```
-[[3, 3],
- [2, 5]]
-```
-**Encryption Output:** `ZEBB`  
-**Decryption Output:** `HELP`
-
-## How to Clone and Run the Code
-### Clone the Repository
-To get the code on your local machine, use the following command:
+Alternatively, you can open Google Colab manually and run the following command to access the script:
 ```sh
 git clone https://github.com/manishashetty29/INS-PROGRAM.git
 cd INS-PROGRAM
+python hill_cipher.ipynb
 ```
+link for colab
 
-### Run the Code in Google Colab
-You can directly open and execute the code in Google Colab by clicking the button below:
-
-### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Hill_cipher/Hill_cipher.ipynb
-
-### Running in Colab:
-1. Click the "Open in Colab" button above.
-2. Once Colab opens, click on `Runtime > Run all` to execute the entire notebook.
-3. Modify the `plaintext` and `key_matrix` values as needed and re-run the cells.
+### Example Usage
+#### Input:
+```
+Enter text: HELLO
+```
+#### Output:
+```
+Encrypted: ZEBBWX
+Decrypted: HELLO
+```
+(Note: Padding 'X' is added if needed.)
 
 ## Requirements
-This code requires Python and NumPy. In Colab, these are pre-installed. If running locally, install NumPy using:
+This script runs on **Python 3** and requires **NumPy**. These are pre-installed in Google Colab. If running locally, install NumPy using:
 ```sh
 pip install numpy
 ```
 
-## License
-This project is open-source under the MIT License.
+## Contributing
+Feel free to fork the repository, submit issues, or contribute improvements.
 
----
-Enjoy using the Hill Cipher for encryption and decryption! If you have any issues, feel free to open an issue on GitHub.
+
+
 
