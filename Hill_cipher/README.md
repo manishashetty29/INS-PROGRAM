@@ -1,88 +1,72 @@
 # Hill Cipher 
+Encryption and Decryption
 
-This repository contains a simple Python program that implements the Hill Cipher encryption algorithm using NumPy. The code is designed to be executed in Google Colab and can also be cloned from GitHub for local execution.
+This repository contains a Python implementation of the **Hill Cipher** encryption and decryption algorithm using NumPy. The program encrypts a plaintext message using a **3x3 key matrix** and then decrypts it back to the original text.
 
- About the Code
+## How the Code Works
 
-The Hill Cipher is a polygraphic substitution cipher that uses matrix multiplication for encryption. This program takes a plaintext input and encrypts it using a predefined key matrix.
+### Encryption Process:
+1. Convert the plaintext to uppercase and remove spaces.
+2. Ensure the plaintext length is a multiple of the key matrix size by padding with 'X' if necessary.
+3. Convert the characters to numerical values (A=0, B=1, ..., Z=25).
+4. Break the plaintext into blocks of size `n` (size of the key matrix).
+5. Multiply each block with the key matrix and take modulo 26.
+6. Convert the resulting numbers back to characters to get the ciphertext.
 
- Logic of the Code
+### Decryption Process:
+1. Compute the determinant of the key matrix.
+2. Find the modular inverse of the determinant (mod 26).
+3. Compute the inverse of the key matrix in modulo 26.
+4. Convert the ciphertext into numerical values.
+5. Multiply each block with the inverse key matrix and take modulo 26.
+6. Convert the resulting numbers back to characters.
+7. Remove any padding 'X' added during encryption.
 
-## Encryption:
+## Installation and Execution
 
-The hill_cipher_encrpt() function takes plaintext and a key matrix as input.
+### Cloning the Repository
+To get the code, clone this repository using the following command:
+```sh
+ git clone https://github.com/manishashetty29/INS-PROGRAM.git
+```
 
-The plaintext is converted into numerical values (A=0, B=1, ..., Z=25).
+### Running the Code in Google Colab
+1. Open the repository on GitHub.
+2. Click on the **"Open in Colab"** button to directly open the script in Google Colab.
+3. Run the script by clicking on **Runtime > Run all** or executing each cell individually.
+4. Enter the plaintext when prompted.
+5. The script will display the encrypted and decrypted text.
 
-It ensures the plaintext length is a multiple of the key matrix size by appending 'X' if necessary.
-
-The numerical values are grouped into blocks, multiplied with the key matrix, and taken modulo 26.
-
-The transformed numerical values are converted back into letters to produce the encrypted text.
-
- Example Execution
-
-Enter the plaintext: HELLO
-Encrypted Text: ZEBBW
-## How to Run the Code
-
-Option 1: Open in Google Colab
-
-To directly open the notebook in Google Colab, click the button below:
-### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Hill_cipher/hill_cipher.ipynb
-
-
-
-Option 2: Clone the Repository and Run Locally
-
-Clone the repository using Git:
-
+Alternatively, you can open Google Colab manually and run the following command to access the script:
+```sh
 git clone https://github.com/manishashetty29/INS-PROGRAM.git
-
-Navigate to the project directory:
-
-cd Hill_cipher
-
-Run the script in Python:
-
+cd INS-PROGRAM
 python hill_cipher.ipynb
+```
+link for colab
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Hill_cipher/Hill_cipher.ipynb
 
-## Code Explanation
+### Example Usage
+#### Input:
+```
+Enter text: HELLO
+```
+#### Output:
+```
+Encrypted: ZEBBWX
+Decrypted: HELLO
+```
+(Note: Padding 'X' is added if needed.)
 
-import numpy as np
+## Requirements
+This script runs on **Python 3** and requires **NumPy**. These are pre-installed in Google Colab. If running locally, install NumPy using:
+```sh
+pip install numpy
+```
 
-def hill_cipher_encrpt(plaintext, key_matrix):
-    n = len(key_matrix)
-    plaintext = plaintext.upper().replace(" ", "")
-    if len(plaintext) % n != 0:
-        plaintext += "X" * (n - len(plaintext) % n)
-    
-    plaintext_vector = [ord(char) - ord('A') for char in plaintext]
-    ciphertext = ""
-    
-    for i in range(0, len(plaintext_vector), n):
-        block = plaintext_vector[i:i+n]
-        result = np.dot(key_matrix, block) % 26
-        ciphertext += "".join(chr(num + ord('A')) for num in result)
-    
-    return ciphertext
+## Contributing
+Feel free to fork the repository, submit issues, or contribute improvements.
 
-plaintext = input("Enter the plaintext: ")
-key_matrix = np.array([[6, 24, 1], [13, 15, 10], [20, 17, 15]])
-print("Encrypted:", hill_cipher_encrpt(plaintext, key_matrix))
 
-key_matrix: A predefined 3x3 key matrix for encryption.
 
-plaintext: User input, which is cleaned and processed.
-
-hill_cipher_encrpt(): Encrypts the text using matrix multiplication.
-
-The encrypted text is displayed as output.
-
-## Features
-
-1) Implements Hill Cipher encryption using matrix operations
-2) Automatically pads plaintext if its length is not a multiple of the key matrix size
-3) Works on Google Colab & locally
-4) Simple and easy-to-run script
 
