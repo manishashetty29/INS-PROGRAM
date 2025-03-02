@@ -7,6 +7,7 @@ This repository contains a Python implementation of the Data Encryption Standard
 To run this implementation, you can use Google Colab, an online platform for executing Python code in a cloud-based Jupyter Notebook environment.
 
 ### Google Colab Link
+https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/DataEncryptionStandard/DES.ipynb
 
 
 ## How It Works
