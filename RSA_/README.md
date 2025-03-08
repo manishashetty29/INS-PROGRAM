@@ -81,7 +81,7 @@ Replace `<your-repository-url>` with the actual GitHub repository link.
 ### Open in Google Colab
 This repository includes an option to open the script directly in Google Colab. Click the following link to run the code in Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](<your-colab-link>)
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/RSA_/RSA.ipynb
 
 ### Run the Code
 After cloning the repository, navigate to the project directory and execute:
