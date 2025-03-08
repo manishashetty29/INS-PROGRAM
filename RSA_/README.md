@@ -74,7 +74,7 @@ RSA(p, q, msg)
 ### Clone the Repository
 To get a local copy of the code, run the following command:
 ```sh
-git clone <https://github.com/manishashetty29/INS-PROGRAM.git>
+git clone https://github.com/manishashetty29/INS-PROGRAM.git
 ```
 Replace git clone <your-repository-url> with the actual GitHub repository link.
 
