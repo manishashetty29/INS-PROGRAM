@@ -76,8 +76,7 @@ To get a local copy of the code, run the following command:
 ```sh
 git clone <your-repository-url>
 ```
-Replace https://github.com/manishashetty29/INS-PROGRAM.git
-with the actual GitHub repository link.
+Replace git clone <your-repository-url> with the actual GitHub repository link.
 
 ### Open in Google Colab
 This repository includes an option to open the script directly in Google Colab. Click the following link to run the code in Colab:
