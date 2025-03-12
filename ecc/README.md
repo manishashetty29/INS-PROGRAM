@@ -114,6 +114,6 @@ print("Receiver encryption key : ", compress_point(enKeyReceiver))
 
 ## Google Colab Link
 To run this code in Google Colab, click the link below:
-[Google Colab Notebook](YOUR_COLAB_LINK_HERE)
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/ecc/ecc.ipynb
 
 
