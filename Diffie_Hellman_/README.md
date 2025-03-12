@@ -62,6 +62,6 @@ print("Shared key for B:", Kb)
 
 ## Google Colab Link
 You can run this code in Google Colab using the following link:
-[Google Colab Notebook](YOUR_COLAB_LINK_HERE)
+### https://colab.research.google.com/github/manishashetty29/INS-PROGRAM/blob/main/Diffie_Hellman_/Diffie_Helman.ipynb
 
 
